@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+  --color-1:#f7f3e9;
+  --color-2: #a3d2ca;
+  --color-3: #5eaaa8;
+  --color-4:#f05945;
+  --color-5: #282846;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+html {
+  font-size: 150%;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.6);
+}
+
+.calculator_keys buttons {
+  line-height: 1;
+  border: 1px solid var(--color-5);
+}
+/*# sourceMappingURL=styles.css.map */
