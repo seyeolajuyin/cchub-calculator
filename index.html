@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles//reset.cssoperator_btn " />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Calculator</title>
   </head>
@@ -11,24 +12,25 @@
     <div class="calculator">
       <div class="calculator_display">0</div>
       <div class="calculator_keys">
-        <buttons>+</buttons>
-        <buttons>-</buttons>
-        <buttons>&times;</buttons>
-        <buttons>&#247;</buttons>
-        <buttons>1</buttons>
-        <buttons>2</buttons>
-        <buttons>3</buttons>
-        <buttons>4</buttons>
-        <buttons>5</buttons>
-        <buttons>6</buttons>
-        <buttons>7</buttons>
-        <buttons>8</buttons>
-        <buttons>9</buttons>
-        <buttons>0</buttons>
-        <buttons>.</buttons>
-        <buttons>AC</buttons>
-        <buttons>=</buttons>
+        <buttons class="operator_btn plus">+</buttons>
+        <buttons class="operator_btn minus">-</buttons>
+        <buttons class="operator_btn multiply">&times;</buttons>
+        <buttons class="operator_btn divide">&#247;</buttons>
+        <buttons class="numbers_btn one">1</buttons>
+        <buttons class="numbers_btn two">2</buttons>
+        <buttons class="numbers_btn three">3</buttons>
+        <buttons class="numbers_btn four">4</buttons>
+        <buttons class="numbers_btn five">5</buttons>
+        <buttons class="numbers_btn six">6</buttons>
+        <buttons class="numbers_btn seven">7</buttons>
+        <buttons class="numbers_btn eight">8</buttons>
+        <buttons class="numbers_btn nine">9</buttons>
+        <buttons class="numbers_btn zero">0</buttons>
+        <buttons class="numbers_btn decimal">.</buttons>
+        <buttons class="numbers_btn clear">AC</buttons>
+        <buttons class="equal"> = </buttons>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

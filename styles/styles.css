@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 :root {
-  --color-1: #f7f3e9;
-  --color-2: #a3d2ca;
-  --color-3: #5eaaa8;
-  --color-4: #f05945;
-  --color-5: #282846;
+  --color-1:#364547;
+  --color-2: #f6f5f5;
+  --color-3: #d3e0ea;
+  --color-4:#276678;
+  --color-5: #1687a7;
 }
 
 * {
@@ -21,48 +22,140 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Poppins", Helvetica;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   text-align: center;
 }
 
 .calculator {
   -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.3em;
   overflow: hidden;
 }
 
 .calculator_display {
-  background-color: var(--color-5);
+  background-color: var(--color-1);
   color: var(--color-2);
-  width: 15rem;
+  width: 13rem;
   padding: 0.75rem 1rem;
   text-align: right;
 }
 
 .calculator_keys {
-  background: var(--color-2);
+  background: grey;
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (auto) [4]; */
-  grid-template-columns: repeat(4, auto);
-  grid-template-areas:
-    ". . . ."
-    "seven eight nine equals"
-    "four five six equals"
-    "one two three equals"
-    "zero decimal clear equals ";
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  gap: 1px;
+      grid-template-areas: ". . . ." " seven eight nine equal" " four five six equal" " one two three equal" " zero decimal clear equal";
 }
 
 .calculator_keys buttons {
-  border: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid var(--color-3);
+  background: var(--color-3);
+}
+
+.calculator_keys .one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.calculator_keys .two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.calculator_keys .three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.calculator_keys .four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.calculator_keys .five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.calculator_keys .six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.calculator_keys .seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.calculator_keys .eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.calculator_keys .nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.calculator_keys .zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: zero;
+}
+
+.calculator_keys .clear {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: clear;
+}
+
+.calculator_keys .decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: decimal;
+}
+
+.calculator_keys .equal {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: equal;
+  padding-top: 50px;
+  background-color: var(--color-4);
+}
+
+.calculator_keys .equal:active, .calculator_keys .equal:focus {
+  background-color: var(--color-5);
+}
+
+.calculator_keys .operator_btn {
+  background: var(--color-2);
+}
+
+.calculator_keys .operator_btn:active, .calculator_keys .operator_focus {
+  background-color: var(--color-3);
+}
+
+.calculator_keys .numbers_btn:active, .calculator_keys .numbers_btn:focus {
+  background: var(--color-2);
 }
 /*# sourceMappingURL=styles.css.map */
