@@ -59,7 +59,7 @@ body{
 
     background: grey;
     display: grid;
-    
+    cursor: default;
     grid-template-columns: repeat(4, auto);
     gap: 1px;
     grid-template-areas: 

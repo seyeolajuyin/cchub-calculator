@@ -52,6 +52,7 @@ body {
   background: grey;
   display: -ms-grid;
   display: grid;
+  cursor: default;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
   gap: 1px;
