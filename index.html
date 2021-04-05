@@ -12,12 +12,16 @@
     <div class="calculator">
       <div class="calculator_display">0</div>
       <div class="calculator_keys">
-        <buttons class="operator_btn minus" data-type="operator">-</buttons>
-        <buttons class="operator_btn plus" data-type="operator">+</buttons>
-        <buttons class="operator_btn multiply" data-type="operator"
+        <buttons class="operator_btn" data-key="minus" data-type="operator"
+          >-</buttons
+        >
+        <buttons class="operator_btn" data-key="plus" data-type="operator"
+          >+</buttons
+        >
+        <buttons class="operator_btn" data-key="multiply" data-type="operator"
           >&times;</buttons
         >
-        <buttons class="operator_btn divide" data-type="operator"
+        <buttons class="operator_btn" data-key="divide" data-type="operator"
           >&#247;</buttons
         >
         <buttons class="numbers_btn one" data-type="number">1</buttons>
@@ -31,8 +35,8 @@
         <buttons class="numbers_btn nine" data-type="number">9</buttons>
         <buttons class="numbers_btn zero" data-type="number">0</buttons>
         <buttons class="numbers_btn decimal" data-type="number">.</buttons>
-        <buttons class="numbers_btn clear">AC</buttons>
-        <buttons class="equal"> = </buttons>
+        <buttons class="numbers_btn clear" data-type="clear">AC</buttons>
+        <buttons class="equal" data-type="equal"> = </buttons>
       </div>
     </div>
     <script src="./main.js"></script>
